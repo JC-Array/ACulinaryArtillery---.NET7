@@ -1,35 +1,35 @@
 {
-	ingredient: { type: "item", code: "game:clay-*", name: "type", allowedVariants: ["blue", "fire"] },
-	pattern: [[
+	"ingredient": { "type": "item", "code": "game:clay-*", "name": "type", "allowedVariants": ["blue", "fire", "red"] },
+	"pattern": [[
 		"###",
 		"###",
-		"###",
+		"###"
 	],
 	[
 		"###",
 		"#_#",
-		"###",
+		"###"
 	],
 	[
 		"###",
 		"#_#",
-		"###",
+		"###"
 	],
 	[
 		"###",
 		"#_#",
-		"###",
+		"###"
 	],
 	[
 		"___",
 		"_#_",
-		"___",
+		"___"
 	],
 	[
 		"___",
 		"_#_",
-		"___",
+		"___"
 	]],
-	name: "bottle",
-	output: { type: "block", code: "aculinaryartillery:bottle-clay-raw" }
+	"name": "bottle",
+	"output": { "type": "block", "code": "aculinaryartillery:bottle-clay-raw" }
 }

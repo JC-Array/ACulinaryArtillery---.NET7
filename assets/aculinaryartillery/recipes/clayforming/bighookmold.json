@@ -1,6 +1,6 @@
 {
-	ingredient: { type: "item", code: "game:clay-*", name: "type", allowedVariants: ["blue", "fire"] },
-	pattern: [[
+	"ingredient": { "type": "item", "code": "game:clay-*", "name": "type", "allowedVariants": ["blue", "fire", "red"] },
+	"pattern": [[
 		"##############",
 		"##############",
 		"##############",
@@ -14,7 +14,7 @@
 		"##############",
 		"##############",
 		"##############",
-		"##############",
+		"##############"
 	],
 	[
       "##############",
@@ -30,8 +30,8 @@
       "#_##_###_##_##",
       "#_##_###_##_##",
       "#__#__##__#__#",
-      "##############",
+      "##############"
 	]],
-	name: "Big Hook Mold",
-	output: { type: "block", code: "aculinaryartillery:bighookmold-raw"  }
+	"name": "Big Hook Mold",
+	"output": { "type": "block", "code": "aculinaryartillery:bighookmold-raw"  }
 }

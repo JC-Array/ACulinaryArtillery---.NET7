@@ -1,6 +1,6 @@
 {
-	ingredient: { type: "item", code: "game:clay-*", name: "type", allowedVariants: ["blue", "fire"] },
-	pattern: [
+	"ingredient": { "type": "item", "code": "game:clay-*", "name": "type", "allowedVariants": ["blue", "fire", "red"] },
+	"pattern": [
 		[
 			"____________",
 			"____________",
@@ -11,7 +11,7 @@
 			"___######___",
 			"___######___",
 			"____________",
-			"____________",
+			"____________"
 		],
 		[
 			"____________",
@@ -23,7 +23,7 @@
 			"__#______#__",
 			"__#______#__",
 			"__########__",
-			"____________",
+			"____________"
 		],
 		[
 			"____####____",
@@ -35,9 +35,9 @@
 			"__#______#__",
 			"__#______#__",
 			"__########__",
-			"____####____",
+			"____####____"
 		]	
 	],
-	name: "Saucepan",
-	output: { type: "block", code: "aculinaryartillery:saucepan-raw" }
+	"name": "Saucepan",
+	"output": { "type": "block", "code": "aculinaryartillery:saucepan-raw" }
 }

@@ -3,7 +3,7 @@
     "type": "item",
     "code": "game:clay-*",
     "name": "type",
-    "allowedVariants": ["blue", "fire"]
+    "allowedVariants": ["blue", "fire", "red"]
   },
     "pattern": [
         [
@@ -145,7 +145,7 @@
             "#__________#",
             "#__________#",
             "############"
-        ],
+        ]
     ],
   "name": "Mini Cauldron Mold",
   "output": { "type": "block", "code": "aculinaryartillery:cauldronminimold-raw" }
