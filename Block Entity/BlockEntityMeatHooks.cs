@@ -44,7 +44,8 @@ namespace ACulinaryArtillery
             // Console.WriteLine("ItemStack: {0}" + stack);
 
             // Early exit to prevent infinate loop
-            // Most items seem to have a value of 1, so falling back to a value of 1
+            // Not sure what this value should be.  A value of 1 results in red meat always spoiling on rack in a celler.  I think this issue is 
+            // Caused by expanded foods not setting cure/dry rates propery.  This section of code could also not be properly reading the values.
             return 1;   
             // return Inventory.GetTransitionSpeedMul(transType, stack);
         }
