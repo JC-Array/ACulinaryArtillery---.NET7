@@ -13,7 +13,7 @@ namespace ACulinaryArtillery
     public class BlockEntityMeatHooks : BlockEntityDisplayCase, ITexPositionSource
     {
         public override string InventoryClassName => "meathooks";
-        protected InventoryGeneric inventory;
+        protected new InventoryGeneric inventory;
         public override string AttributeTransformCode => "meatHookTransform";
         public override InventoryBase Inventory => inventory;
 
@@ -38,9 +38,15 @@ namespace ACulinaryArtillery
 
             if (transType == EnumTransitionType.Cure) return Block.Attributes["cureRate"].AsFloat(3);
             if (transType == EnumTransitionType.Dry) return Block.Attributes["dryRate"].AsFloat(3);
+            // Logs to help troubleshoot
+            // This method seems to be called alot, not sure if there is any preformance implications or other issues causing it to be called so frequently
+            // Console.WriteLine("EnumTransitionType: {0}" + transType);
+            // Console.WriteLine("ItemStack: {0}" + stack);
 
-
-            return Inventory.GetTransitionSpeedMul(transType, stack);
+            // Early exit to prevent infinate loop
+            // Most items seem to have a value of 1, so falling back to a value of 1
+            return 1;   
+            // return Inventory.GetTransitionSpeedMul(transType, stack);
         }
 
         private void RotDrop(float dt)

@@ -401,7 +401,9 @@
                 tf.Translation.Y -= Math.Min(0.05f, secondsUsed * 2);
                 tf.Rotation.X += Math.Min(30f, secondsUsed * 350);
                 tf.Rotation.Y += Math.Min(80f, secondsUsed * 350);
-                byEntity.Controls.UsingHeldItemTransformAfter = tf;
+                // 'EntityControls.UsingHeldItemTransformAfter' is obsolete: 'Setting this value has no effect anymore. Add an animation to the seraph instead'
+                // Animation not added to seraph, just commented out
+                // byEntity.Controls.UsingHeldItemTransformAfter = tf;
                 return secondsUsed <= 1f;
             }
             return true;
@@ -782,7 +784,7 @@
         }
 
 
-        private int SplitStackAndPerformAction(Entity byEntity, ItemSlot slot, System.Func<ItemStack, int> action)
+        private new int SplitStackAndPerformAction(Entity byEntity, ItemSlot slot, System.Func<ItemStack, int> action)
         {
             if (slot.Itemstack.StackSize == 1)
             {
