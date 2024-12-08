@@ -32,16 +32,8 @@ PS C:\Users\JC_Array\code_repos\demo> [Environment]::SetEnvironmentVariable("VIN
 
 ```bash
 PS C:\Users\JC_Array> cd .\code_repos\demo\ACulinaryArtillery---.NET7\
-PS C:\Users\JC_Array\code_repos\demo\ACulinaryArtillery---.NET7> dotnet build .\ACulinaryArtillery.csproj^C
-PS C:\Users\JC_Array\code_repos\demo\ACulinaryArtillery---.NET7> ^C
-PS C:\Users\JC_Array\code_repos\demo\ACulinaryArtillery---.NET7>
-PS C:\Users\JC_Array\code_repos\demo\ACulinaryArtillery---.NET7>
-PS C:\Users\JC_Array\code_repos\demo\ACulinaryArtillery---.NET7>
-PS C:\Users\JC_Array\code_repos\demo\ACulinaryArtillery---.NET7> echo $VINTAGE_STORY
-PS C:\Users\JC_Array\code_repos\demo\ACulinaryArtillery---.NET7> echo $enc:VINTAGE_STORY
 PS C:\Users\JC_Array\code_repos\demo\ACulinaryArtillery---.NET7> echo $env:VINTAGE_STORY
 C:\Users\JC_Array\AppData\Roaming\Vintagestory
-PS C:\Users\JC_Array\code_repos\demo\ACulinaryArtillery---.NET7>
 PS C:\Users\JC_Array\code_repos\demo\ACulinaryArtillery---.NET7>
 PS C:\Users\JC_Array\code_repos\demo\ACulinaryArtillery---.NET7> dotnet build .\ACulinaryArtillery.csproj
 MSBuild version 17.7.6+77d58ec69 for .NET
