@@ -1975,8 +1975,9 @@ namespace ACulinaryArtillery
         public ItemStack forContents;
         private readonly ICoreClientAPI capi;
         private TextureAtlasPosition contentTextPos;
-        private readonly TextureAtlasPosition blockTextPos;
-        private readonly TextureAtlasPosition corkTextPos;
+        // Commented out, unused
+        //private readonly TextureAtlasPosition blockTextPos;
+        //private readonly TextureAtlasPosition corkTextPos;
         private readonly CompositeTexture contentTexture;
 
         public EFTextureSource(ICoreClientAPI capi, ItemStack forContents, CompositeTexture contentTexture)
@@ -1986,17 +1987,18 @@ namespace ACulinaryArtillery
             this.contentTexture = contentTexture;
         }
 
-
-        ITextureAtlasAPI curAtlas;
-        Shape nowTesselatingShape;
+        // Commented out, unused
+        //ITextureAtlasAPI curAtlas;
+        // Shape nowTesselatingShape;
 
         public Size2i AtlasSize => this.capi.BlockTextureAtlas.Size;
         public virtual TextureAtlasPosition this[string textureCode]
         {
             get
             {
-                AssetLocation texturePath = null;
-                CompositeTexture tex;
+                // Commented out, unused
+                // AssetLocation texturePath = null;
+                // CompositeTexture tex;
 
                 if (this.contentTextPos == null)
                 {
