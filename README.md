@@ -119,7 +119,7 @@ PS C:\Users\JC_Array\code_repos\demo\ACulinaryArtillery---.NET7>
 
 ![screenshot](demo_pictures/zip_files.png)
 
-5) Rename Mods.zip
+5) Rename Mods.zip to ACulinaryArtillery 1.2.1.zip
 
 ![screenshot](demo_pictures/rename.png)
 ![screenshot](demo_pictures/rename2.png)
