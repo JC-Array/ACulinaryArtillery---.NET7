@@ -15,7 +15,7 @@ namespace ACulinaryArtillery
     {
         private readonly int maxSlots = 16;
         public override string InventoryClassName => "bottlerack";
-        protected InventoryGeneric inventory;
+        protected new InventoryGeneric inventory;
 
         public override InventoryBase Inventory => this.inventory;
 
@@ -248,7 +248,7 @@ namespace ACulinaryArtillery
                     if (blockPath.Contains("-clay-"))
                     {
                         var bottleBlock = this.Api.World.GetBlock(block.CodeWithPath(blockPath));
-                        var texture = ((ICoreClientAPI)this.Api).Tesselator.GetTexSource(bottleBlock);
+                        var texture = ((ICoreClientAPI)this.Api).Tesselator.GetTextureSource(bottleBlock);
                         mesh = block.GenMesh(this.Api as ICoreClientAPI, shapeBase + "block/bottle/bottle", texture, tesselator);
                         mesh = this.TransformBottleMesh(mesh, i, block.FirstCodePart(), block.LastCodePart());
                         mesher.AddMeshData(mesh);
@@ -265,7 +265,7 @@ namespace ACulinaryArtillery
                         else //glass bottle
                         {
                             var bottleBlock = this.inventory[i].Itemstack.Block as BlockBottle;
-                            var texture = tesselator.GetTexSource(bottleBlock);
+                            var texture = tesselator.GetTextureSource(bottleBlock);
                             mesh = block.GenMesh(this.Api as ICoreClientAPI, shapeBase + "block/bottle/glassbottleempty", texture, tesselator);
                             mesh = this.TransformBottleMesh(mesh, i, block.FirstCodePart(), block.LastCodePart());
                             mesher.AddMeshData(mesh);
