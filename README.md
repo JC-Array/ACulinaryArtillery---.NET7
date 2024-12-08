@@ -17,7 +17,7 @@ dotnet build .\ACulinaryArtillery.csproj
 
 1) Open Powershell and run commands below
 ```bash
-PS C:\Users\JC_Array\code_repos> .\code_repos\demo\
+PS C:\Users\JC_Array\> cd .\code_repos\demo\
 PS C:\Users\JC_Array\code_repos\demo> git clone git@github.com:JC-Array/ACulinaryArtillery---.NET7.git
 Cloning into 'ACulinaryArtillery---.NET7'...
 remote: Enumerating objects: 2688, done.
